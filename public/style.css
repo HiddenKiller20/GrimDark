@@ -44,3 +44,23 @@ footer{background:linear-gradient(90deg,#071a2d,#090909 50%,#2b080b);border-top:
 .footer-logo{width:190px;max-height:105px;object-fit:contain;object-position:left center;filter:drop-shadow(0 0 8px #d6a53444)}
 footer{align-items:center}
 @media(max-width:850px){header{padding-block:10px}.brand img{width:135px;height:70px}.hero{padding-top:55px}.hero-logo{width:min(100%,760px)}.footer-logo{width:145px}}
+
+
+/* Full-site ruined hive battlefield background */
+body{
+  background-color:#030405;
+  background-image:
+    linear-gradient(180deg,rgba(2,3,4,.62),rgba(2,3,4,.78)),
+    linear-gradient(90deg,rgba(6,31,54,.18),transparent 42%,rgba(80,8,10,.20)),
+    url("/Grimdark%20Siege%20Across%20a%20Ruined%20Hive.png");
+  background-size:cover,cover,cover;
+  background-position:center,center,center;
+  background-repeat:no-repeat,no-repeat,no-repeat;
+  background-attachment:fixed,fixed,fixed;
+}
+.hero{background:linear-gradient(180deg,rgba(2,4,7,.30),rgba(3,3,4,.72));backdrop-filter:blur(1px)}
+.intro,section:not(.hero):not(.band):not(.hammer){background-color:rgba(5,6,8,.72)}
+.band{background:linear-gradient(100deg,rgba(38,7,9,.88),rgba(8,8,10,.82),rgba(5,28,49,.88))}
+.hammer{background:radial-gradient(circle at 50% 0,rgba(123,17,24,.45),transparent 42%),rgba(8,5,6,.86)}
+details,.chapter-card,.faction-card,.blacklist-panel,.order-card,.submission-card,.evidence-form,.staff-login form{backdrop-filter:blur(7px)}
+@media(max-width:850px){body{background-attachment:scroll,scroll,scroll;background-position:center top}}
