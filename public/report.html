@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Submit Evidence | The Grimdark Imperium</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><a class="brand" href="/"><img src="/tgi-official-logo.webp?v=2" alt="TGI logo"><b>THE GRIMDARK IMPERIUM</b></a><nav><a href="/">Home</a><a href="/#hammer">Order of the Hammer</a><a href="/staff.html">Staff Login</a></nav></header>
+<main><section class="form-page"><small>ORDER OF THE HAMMER</small><h1>Submit Evidence</h1><p>Use this form to privately submit a moderation report to TGI staff. Do not upload illegal sexual content involving minors, malware, or executable files. For prohibited material, provide a platform report/reference link instead of uploading it.</p>
+<form id="reportForm" class="evidence-form" enctype="multipart/form-data">
+<label>Reported username<input name="reportedUser" maxlength="120" required></label>
+<label>Your username <span>(optional)</span><input name="reporter" maxlength="120"></label>
+<label>Incident date<input name="incidentDate" type="date"></label>
+<label>Reason<input name="reason" maxlength="300" required></label>
+<label>Full incident details<textarea name="details" rows="8" maxlength="8000" required></textarea></label>
+<label>Evidence links <span>(optional)</span><textarea name="evidenceLinks" rows="4" maxlength="2500" placeholder="Links to screenshots, videos, message references, or platform reports"></textarea></label>
+<label>Attachments <span>(optional, up to 6 files, 10 MB each)</span><input name="attachments" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.gif,.pdf,.txt"></label>
+<button class="btn" type="submit">SUBMIT EVIDENCE</button><div id="reportMsg" class="form-msg"></div>
+</form></section></main><footer><span>THE GRIMDARK IMPERIUM</span><a href="https://discord.gg/uwSgBer5d3" target="_blank">Discord</a></footer>
+<script>
+document.getElementById('reportForm').addEventListener('submit',async e=>{
+ e.preventDefault();const msg=document.getElementById('reportMsg');msg.textContent='Submitting…';
+ try{const r=await fetch('/api/report',{method:'POST',body:new FormData(e.target)});const j=await r.json();if(!r.ok)throw new Error(j.error||'Submission failed');msg.textContent='Submitted successfully. Case ID: '+j.id;e.target.reset()}catch(err){msg.textContent=err.message}
+});
+</script></body></html>
