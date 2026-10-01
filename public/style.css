@@ -6,3 +6,30 @@
 
 
 .offense-list{display:grid;gap:10px;margin:18px 0 34px}.offense-item{padding:16px 18px;background:#100b0c;border:1px solid #542020;border-left:3px solid #a83b3b;color:#d6c9bd;font:14px/1.65 Arial,sans-serif}.offense-item.info{border-color:#544624;border-left-color:#caa65a}.past-list{display:grid;gap:10px}.past-item{display:grid;grid-template-columns:1fr 2fr auto;gap:14px;padding:14px;border:1px solid #342d1d;background:#09090b;font:13px/1.5 Arial,sans-serif;color:#aaa}.past-item b{color:#eadfca}.past-item small{letter-spacing:1px}.admin-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}.admin-tabs button{padding:12px 15px;background:#0b0c0e;border:1px solid #57472a;color:#d6c69f;cursor:pointer;font:bold 11px Arial,sans-serif;letter-spacing:1px}.admin-tabs button.active,.admin-tabs button:hover{background:#9b7a39;color:#090909}.admin-section-head{margin:30px 0 18px}.admin-section-head h2{font-size:34px;margin-bottom:8px}.admin-section-head p{font:14px/1.6 Arial,sans-serif;color:#999}.admin-form{display:grid;gap:14px;margin-bottom:18px}.admin-form label{display:grid;gap:7px;color:#d8caa9;font:700 12px Arial,sans-serif;letter-spacing:.5px}.admin-form input,.admin-form textarea,.admin-form select{width:100%;padding:12px;background:#07080a;border:1px solid #51462f;color:#eee;font:14px/1.5 Arial,sans-serif}.admin-form textarea{resize:vertical}.admin-actions{display:flex;gap:10px;flex-wrap:wrap}.danger{background:#5b1717;color:#fff;border-color:#9c3030}.staff-page{max-width:1100px}@media(max-width:650px){.past-item{grid-template-columns:1fr}.admin-tabs{display:grid;grid-template-columns:1fr 1fr}}
+
+
+/* TGI crest-matched theme */
+:root{--gold:#e4b33e;--gold2:#8e5b12;--pale:#fff1c8;--blood:#8f1118;--crimson:#c51c22;--imperial-blue:#123f72;--steel:#9aa6ad;--void:#030405}
+body{background-color:var(--void);background-image:radial-gradient(circle at 50% 0,#5d3a0d55 0,transparent 25%),radial-gradient(circle at 8% 30%,#073e7355 0,transparent 25%),radial-gradient(circle at 92% 35%,#72101855 0,transparent 25%),linear-gradient(180deg,#020304,#080706 50%,#030304);color:#e9dfca}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:linear-gradient(90deg,transparent 49.7%,#d5a63a10 50%,transparent 50.3%),repeating-linear-gradient(0deg,#ffffff05 0 1px,transparent 1px 5px)}
+header{background:linear-gradient(180deg,#050505fa,#090706f5);border-bottom:2px solid #b27c1f;box-shadow:0 8px 28px #000,0 1px 0 #f4d77c55}
+.brand b,h1,h2,h3,summary{font-family:Georgia,"Times New Roman",serif;text-shadow:0 2px 0 #000,0 0 14px #b2741c33}
+.brand img{filter:drop-shadow(0 0 8px #e1a82f66)}
+nav a{color:#e8c66d}nav a:hover{color:#fff0b1;text-shadow:0 0 10px #e3a92f}
+.hero{background:radial-gradient(circle at 50% 35%,#e5a52735 0,transparent 30%),linear-gradient(110deg,#082a4b 0,#090909 35%,#171008 50%,#16090a 68%,#4c090d 100%);border-bottom:2px solid #a87320;box-shadow:inset 0 -60px 100px #000}
+.hero-logo{filter:drop-shadow(0 0 16px #f0b63588) drop-shadow(0 20px 30px #000)}
+.hero h1{background:linear-gradient(#fff3bd,#e8b63e 45%,#8d5612 72%,#f0c75d);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 0 #341c05)}
+.hero h3,.hero>div>p:first-of-type{color:#e7c46c}
+.btn{background:linear-gradient(180deg,#f1cb68,#b47b20 48%,#6d3c0b);border:1px solid #f3d778;box-shadow:inset 0 1px #fff4b999,0 4px 14px #000;color:#100b04;text-shadow:0 1px #f5d67b}
+.btn.alt{background:linear-gradient(#152c46,#08101a);border-color:#376fa4;color:#e8f2ff;text-shadow:none}.btn.danger{background:linear-gradient(#a51d24,#4e090d);border-color:#d64b4f;color:#fff;text-shadow:none}
+details,.subgrid article,.profilegrid article,.chapter-card,.faction-card,.blacklist-panel,.order-card,.submission-card,.evidence-form,.staff-login form{background:linear-gradient(145deg,#16130e,#08090b 55%,#0d0909);border-color:#6e4c18;box-shadow:inset 0 0 0 1px #e0b64a0a,0 8px 24px #0008}
+summary{background:linear-gradient(90deg,#112c47 0,#11100e 45%,#361014 100%);border-left:4px solid #e1ad39;color:#ffe8a5}
+.chapter-tab,.faction-tab,.admin-tabs button{background:linear-gradient(#161616,#080808);border-color:#76531e;color:#e4c26d}.chapter-tab:hover,.chapter-tab.active,.faction-tab:hover,.faction-tab.active,.admin-tabs button:hover,.admin-tabs button.active{background:linear-gradient(#f0c55d,#986318);border-color:#ffe28a;color:#120c03;box-shadow:0 0 12px #e6a52c55}
+.band{background:linear-gradient(100deg,#420a0e,#09090b 46%,#082d50);border-block-color:#9b6d22}
+.rules p{background:linear-gradient(90deg,#111215,#0a0a0b);border-left-color:#d7a434}
+.hammer{background:radial-gradient(circle at 50% 0,#7b111855,transparent 42%),linear-gradient(115deg,#071e35,#100808 45%,#3a080b);border-block:2px solid #8c5e1d}
+.hammer-tabs a{background:linear-gradient(#250c0e,#0b0808);border-color:#9a2c31;color:#efc75c}.hammer-tabs a:hover{background:#8f1118;color:#fff0bf}
+.offense-item{background:linear-gradient(90deg,#28090c,#0b0909);border-color:#7e2025;border-left-color:#d6373d}.offense-item.info{background:linear-gradient(90deg,#102941,#0b0a08);border-color:#6c521d;border-left-color:#e2b33e}
+.portrait{background:radial-gradient(circle at 50% 35%,#b67a2044,#111 52%,#07182a);border-color:#9d7129}
+input,textarea,select,.evidence-form input,.evidence-form textarea,.staff-login input,.submission-card select,.admin-form input,.admin-form textarea,.admin-form select{background:#050608!important;border-color:#76531e!important;color:#f4ead6!important;box-shadow:inset 0 0 12px #000}
+footer{background:linear-gradient(90deg,#071a2d,#090909 50%,#2b080b);border-top:2px solid #81591b}
